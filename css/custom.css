@@ -1,20 +1,27 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-  padding-top: 50px;
   padding-bottom: 20px;
 }
 
-.jumbotron {
-  text-align: center;
-  padding: 0px;
-  height: 800px;
+.navbar {
+    background-color: initial;
+    border-color: initial;
+    border: 0px;
 }
 
+.hello {
+    z-index: 1000;
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    width: inherit;
+    color: white;
+}
 /*COVER VIDEO helloworld*/
 .homepage-hero-module {
     border-right: none;
     border-left: none;
-    position: absolute;
+    position: relative;
 }
 .no-video .video-container video,
 .touch .video-container video {
@@ -45,10 +52,11 @@ body {
     width: 100%;
 }
 .video-container video {
+    position: absolute;
     z-index: 0;
     bottom: 0;
 }
 .video-container video.fillWidth {
     width: 100%;
 }
-/*end COVER VIDEO*/
+/* end of coverr */

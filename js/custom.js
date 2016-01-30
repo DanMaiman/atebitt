@@ -1,6 +1,4 @@
-//Cover Video//
-//jQuery is required to run this code
-$( document ).ready(function() {
+jQuery( document ).ready(function($) {
 
     scaleVideoContainer();
 
@@ -17,7 +15,7 @@ $( document ).ready(function() {
 
 });
 
-function scaleVideoContainer($) {
+function scaleVideoContainer() {
 
     var height = $(window).height() + 5;
     var unitHeight = parseInt(height) + 'px';
@@ -48,7 +46,21 @@ function scaleBannerVideoSize(element){
     $(element).each(function(){
         var videoAspectRatio = $(this).data('height')/$(this).data('width');
 
+
         $(this).width(windowWidth);
+
+        if (windowWidth >= 1000) {
+            if (windowHeight > windowWidth * 0.5625) {
+                videoHeight = windowHeight;
+                videoWidth = videoHeight / videoAspectRatio;
+                $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
+
+                $(this).width(videoWidth).height(videoHeight);
+            }   else {
+
+                $(this).css({'margin-top' : 0, 'margin-left' : 0, 'width' : windowWidth, 'height' : windowWidth * 0.5625});
+            }
+        }
 
         if(windowWidth < 1000){
             videoHeight = windowHeight;
@@ -56,6 +68,10 @@ function scaleBannerVideoSize(element){
             $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
 
             $(this).width(videoWidth).height(videoHeight);
+
+            if (windowHeight < windowWidth * 0.5625) {
+                $(this).css({'margin-top' : 0, 'margin-left' : 0, 'width' : windowWidth, 'height' : windowWidth * 0.5625});
+            }
         }
 
         $('.homepage-hero-module .video-container video').addClass('fadeIn animated');

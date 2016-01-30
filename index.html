@@ -30,9 +30,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!--jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <!--End jQuery-->
   </head>
 
   <body>
@@ -55,23 +52,24 @@
     </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="video-container">
-          <div class="filter"></div>
-          <video autoplay loop class="fillWidth">
-              <source src="video/hello-world.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-              <source src="video/hello-world.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-          </video>
-          <div class="poster hidden">
-              <img src="video/hello-world.jpg" alt="">
-          </div>
-          <div class="homepage-hero-module">
+<div class="homepage-hero-module">
+    <div class="video-container">
+        <div class="container">
+          <div class="hello">
             <h1>Hello, world!</h1>
-            <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+                <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
           </div>
-      </div>
+        </div>
+        <div class="filter"></div>
+        <video autoplay loop class="fillWidth">
+            <source src="video/hello-world.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="video/hello-world.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+        <div class="poster hidden">
+            <img src="video/hello-world.jpg" alt="">
+        </div>
     </div>
+</div>
 
     <div class="container">
       <!-- Example row of columns -->
@@ -87,9 +85,10 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
   </body>
