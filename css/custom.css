@@ -71,6 +71,11 @@ h2 {
 .feat-head {
   color: black;
 }
+
+.ft_img {
+  width:100%;
+}
+
 .navbar-inverse .navbar-brand {
   color: yellow;
   font-family: 'source code pro';
