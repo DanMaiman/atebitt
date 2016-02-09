@@ -61,6 +61,10 @@ h2 {
   background-color: #e05038;
 }
 
+.croatia {
+  padding-left: 0px;
+}
+
 #three {
   background-color: #f2cbbc;
 }
@@ -68,6 +72,12 @@ h2 {
 .lead {
   color: white;
 }
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
 .feat-head {
   color: black;
 }
