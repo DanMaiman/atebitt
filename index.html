@@ -9,7 +9,7 @@
     <meta name="author" content="Dan Maiman and Kurt Bauer">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>AteBitt</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +19,22 @@
 
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
+
+    <!--Custom Font/ SOURCE CODE PRO-->
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+
+    <!--Custom Font/ JoseFine Sans-->
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Josefin+Sans' rel='stylesheet' type='text/css'>
+
+    <!--Custom Font/ ABEL-->
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Josefin+Sans|Abel' rel='stylesheet' type='text/css'>
+
+    <!--FONTAWSOME link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!--HOVER.css link-->
+    <link href="css/hover.css" rel="stylesheet" media="all">
+
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -46,7 +62,26 @@
           <a class="navbar-brand" href="#">AteBitt</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-
+          <!--new code nav bar-->
+          <ul class="nav navbar-nav navbar-right">
+            <li id="link">
+              <a href="#about">About Us</a>
+            </li>
+            <li id="link">
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li id="link">
+              <a href="#contact">Contact Us</a>
+            </li>
+            <div class="dropdown" id="link">
+              <button class="button">Services</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Programming </a>
+                  <a href="#">Design</a>
+                  <a href="#">Marketing</a>
+                </div>
+            </div>
+          </ul>
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
@@ -56,8 +91,8 @@
     <div class="video-container">
         <div class="container">
           <div class="hello">
-            <h1>Hello, world!</h1>
-                <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+            <h1>WeNoU</h1>
+                <h2>Modern Design. Perfect Code.</h2>
           </div>
         </div>
         <div class="filter"></div>
@@ -70,6 +105,44 @@
         </div>
     </div>
 </div>
+
+<!-- START THE FEATURETTES -->
+
+      <div class="row" id="one">
+        <div class="col-md-7">
+          <h2 class="feat-head"><strong>PROGRAMMING</strong></h2>
+          <p class="lead"> </p>
+        </div>
+        <div class="col-md-5">
+          <i class="fa fa-gamepad" id="xbox"></i>
+        </div>
+      </div>
+
+      <div class="row" id="two">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="feat-head"><strong>DESIGN</strong></h2>
+          <p class="lead">We’ve helped hundreds of clients impress their customers and improve their online image.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img src="images/davos.jpg" alt="croatia" style="width:500px;height:420px;">
+        </div>
+      </div>
+
+      <div class="row" id="three">
+        <div class="col-md-7">
+          <h2 class="feat-head"><strong>MARKETING</strong></h2>
+          <p class="lead"><span id="circle1">Our team of marketing specialists can create an online marketing plan customized to your business.</span></p>
+        </div>
+        <div class="col-md-5">
+          <i class="fa fa-line-chart" id="arrow"></i>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
 
     <div class="container">
       <!-- Example row of columns -->

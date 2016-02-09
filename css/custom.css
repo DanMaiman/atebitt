@@ -1,62 +1,192 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-bottom: 20px;
+  background-color: black;
+}
+
+h1 {
+  font-family: 'Josefin Sans';
+  font-size: 96px;
+  line-height: 1.2em;
+  text-transform: capitalize;
+  letter-spacing: .1em;
+  font-weight: 400;
+  font-style: normal;
+  color: yellow;
+  margin: 0 auto .25em;
+}
+
+h2 {
+  font-family: "Abel";
+  font-size: 31px;
+  line-height: 1.6em;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-style: normal;
+  color: yellow;
+  margin: 0 auto;
+}
+
+.lead {
+  font-size: 50px;
+  font-family: 'Josefin Sans';
+  text-align: center;
+}
+
+#link {
+  font-family: 'source code pro';
+  text-decoration: overline;
+}
+
+/*FONTAWESOME imgs*/
+#xbox {
+  color: #fff;
+  text-shadow: 1px 1px 1px #ccc;
+  font-size: 30em;
+}
+
+
+#arrow {
+  color: #fff;
+  text-shadow: 1px 1px 1px #ccc;
+  font-size: 30em;
+}
+/*END fontawesome*/
+#one {
+  background-color: #e6af4b;
+}
+
+#two {
+  background-color: #e05038;
+}
+
+#three {
+  background-color: #f2cbbc;
+}
+
+.lead {
+  color: white;
+}
+.feat-head {
+  color: black;
+}
+.navbar-inverse .navbar-brand {
+  color: yellow;
+  font-family: 'source code pro';
+  font-size: 30px;
 }
 
 .navbar {
-    background-color: initial;
-    border-color: initial;
-    border: 0px;
+  color: white;
+  border: 0px;
+  background-color: initial;
+  border-color: initial;
+  font-size: 21px;
 }
 
 .hello {
-    z-index: 1000;
-    position: absolute;
-    top: 35%;
-    text-align: center;
-    width: inherit;
-    color: white;
+  z-index: 1000;
+  position: absolute;
+  top: 35%;
+  text-align: center;
+  width: inherit;
+  color: white;
 }
+
+/*NEW DROP MENU*/
+/* Dropdown Button */
+.button {
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  font-size: 21px;
+  border: none;
+  cursor: pointer;
+  font-family: 'source code pro';
+  text-decoration: overline;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 130px;
+  box-shadow: none;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'source code pro';
+  font-size: 14px;
+  color: yellow;
+  background-color: transparent;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #2B4450}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .button {
+}
+/*END DROPDOWN MENU*/
+
 /*COVER VIDEO helloworld*/
 .homepage-hero-module {
-    border-right: none;
-    border-left: none;
-    position: relative;
+  border-right: none;
+  border-left: none;
+  position: relative;
 }
 .no-video .video-container video,
 .touch .video-container video {
-    display: none;
+  display: none;
 }
 .no-video .video-container .poster,
 .touch .video-container .poster {
-    display: block !important;
+  display: block !important;
 }
 .video-container {
-    position: relative;
-    bottom: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    background: #000;
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
 }
 .video-container .poster img {
-    width: 100%;
-    bottom: 0;
-    position: absolute;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
 }
 .video-container .filter {
-    z-index: 100;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.4);
-    width: 100%;
+  z-index: 100;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
 }
 .video-container video {
-    position: absolute;
-    z-index: 0;
-    bottom: 0;
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
 }
 .video-container video.fillWidth {
-    width: 100%;
+  width: 100%;
 }
 /* end of coverr */
