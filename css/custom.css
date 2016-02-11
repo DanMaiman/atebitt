@@ -28,12 +28,6 @@ h2 {
   margin: 0 auto;
 }
 
-.lead {
-  font-size: 50px;
-  font-family: 'Josefin Sans';
-  text-align: center;
-}
-
 #link {
   font-family: 'source code pro';
   text-decoration: none;
@@ -45,7 +39,6 @@ h2 {
   text-shadow: 1px 1px 1px #ccc;
   font-size: 30em;
 }
-
 
 #arrow {
   color: #fff;
@@ -61,12 +54,18 @@ h2 {
   background-color: #e05038;
 }
 
+#three {
+  background-color: #f2cbbc;
+}
+
 .croatia {
   padding-left: 0px;
 }
 
-#three {
-  background-color: #f2cbbc;
+.lead {
+  font-size: 50px;
+  font-family: 'Josefin Sans';
+  text-align: center;
 }
 
 .lead {
@@ -74,8 +73,8 @@ h2 {
 }
 
 .row {
-    margin-right: 0px;
-    margin-left: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .feat-head {
@@ -93,7 +92,7 @@ h2 {
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    color: white;
+  color: white;
 }
 
 .navbar {
@@ -114,7 +113,6 @@ h2 {
 }
 
 /*NEW DROP MENU*/
-/* Dropdown Button */
 .button {
   background-color: transparent;
   color: white;
@@ -136,7 +134,7 @@ h2 {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: transparent;
+  background-color: black;
   min-width: 130px;
   box-shadow: none;
 }
@@ -154,7 +152,13 @@ h2 {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #2B4450}
+.dropdown-content a:hover {
+  background-color: none;
+  color: white;
+}
+
+/*Color of links whne hovered over*/
+
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
