@@ -53,8 +53,27 @@ h2 {
   to {background-color: white;}
 }
 
+@keyframes navFadeTrans {
+  from {background-color: white;}
+  to {background-color: intial;}
+}
+
 .navBarFade {
-  animation: navFadeWhite 1s;
+  -webkit-animation: navFadeWhite 0.6s;
+  -o-animation: navFadeWhite 0.6s;
+  animation: navFadeWhite 0.6s;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.navBarFade-rev {
+  -webkit-animation: navFadeTrans 0.6s;
+  -o-animation: navFadeTrans 0.6s;
+  animation: navFadeTrans 0.6s;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 

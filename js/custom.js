@@ -14,20 +14,24 @@ jQuery( document ).ready(function($) {
         scaleBannerVideoSize('.video-container video');
     });
 
-    var divOffset = $("div.programming").offset().top;
-    console.log(divOffset);
+    var divOffset = $("div.programming").offset().top - 50;
 
     $(window).scroll(function()  {
         var scrollPos = $(window).scrollTop();
 
 
         if (scrollPos >= divOffset) {
-            $("nav").addClass("navBarFade");     
+            $("nav").addClass("navBarFade");
+            $("nav.navBarFade").removeClass("navBarFade-rev");
         } else {
+            $("nav.navBarFade").addClass("navBarFade-rev");
             $("nav").removeClass("navBarFade");
         }
 
+
     });
+
+    //Put New Animation Here
 
 });
 
