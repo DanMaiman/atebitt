@@ -1,5 +1,6 @@
 jQuery( document ).ready(function($) {
 
+
     scaleVideoContainer();
 
     initBannerVideoSize('.video-container .poster img');
@@ -11,6 +12,21 @@ jQuery( document ).ready(function($) {
         scaleBannerVideoSize('.video-container .poster img');
         scaleBannerVideoSize('.video-container .filter');
         scaleBannerVideoSize('.video-container video');
+    });
+
+    var divOffset = $("div.programming").offset().top;
+    console.log(divOffset);
+
+    $(window).scroll(function()  {
+        var scrollPos = $(window).scrollTop();
+
+
+        if (scrollPos >= divOffset) {
+            $("nav").addClass("navBarFade");     
+        } else {
+            $("nav").removeClass("navBarFade");
+        }
+
     });
 
 });
@@ -79,3 +95,5 @@ function scaleBannerVideoSize(element){
     });
 }
 //end Cover Video//
+
+

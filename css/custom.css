@@ -28,6 +28,38 @@ h2 {
   margin: 0 auto;
 }
 
+/* Nav */
+
+.navbar-inverse .navbar-brand {
+  color: yellow;
+  font-family: 'source code pro';
+  font-size: 30px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+}
+
+.navbar {
+  color: white;
+  border: 0px;
+  background-color: initial;
+  border-color: initial;
+  font-size: 21px;
+}
+
+@keyframes navFadeWhite {
+  from {background-color: initial;}
+  to {background-color: white;}
+}
+
+.navBarFade {
+  animation: navFadeWhite 1s;
+}
+
+
+/* End Nav */
+
 #link {
   font-family: 'source code pro';
   text-decoration: none;
@@ -46,6 +78,7 @@ h2 {
   font-size: 30em;
 }
 /*END fontawesome*/
+
 #one {
   background-color: #e6af4b;
 }
@@ -83,24 +116,6 @@ h2 {
 
 .ft_img {
   width:100%;
-}
-
-.navbar-inverse .navbar-brand {
-  color: yellow;
-  font-family: 'source code pro';
-  font-size: 30px;
-}
-
-.navbar-inverse .navbar-nav>li>a {
-  color: white;
-}
-
-.navbar {
-  color: white;
-  border: 0px;
-  background-color: initial;
-  border-color: initial;
-  font-size: 21px;
 }
 
 .hello {
