@@ -27,11 +27,16 @@ jQuery( document ).ready(function($) {
             $("nav.navBarFade").addClass("navBarFade-rev");
             $("nav").removeClass("navBarFade");
         }
-
+        //black text code NEW
+        if (scrollPos >= divOffset) {
+            $(".hvr-overline-from-center").addClass("navBlackText");
+            $(".navBlackText").removeClass("navBlack-rev");
+        } else {
+            $(".navBlackText").addClass("navBlack-rev");
+            $(".hvr-overline-from-center").removeClass("navBlackText");
+        }
 
     });
-
-    //Put New Animation Here
 
 });
 
@@ -99,5 +104,3 @@ function scaleBannerVideoSize(element){
     });
 }
 //end Cover Video//
-
-

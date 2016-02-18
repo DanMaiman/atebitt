@@ -28,6 +28,7 @@ h2 {
   margin: 0 auto;
 }
 
+/*was weirdly deleted?*/
 /* Nav */
 
 .navbar-inverse .navbar-brand {
@@ -40,8 +41,16 @@ h2 {
   color: white;
 }
 
+.navbar-inverse .hvr-overline-from-center>li>a {
+  -webkit-animation: navFadeWhite 0.6s;
+  -o-animation: navFadeWhite 0.6s;
+  animation: navFadeWhite 0.6s;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
 .navbar {
-  color: white;
   border: 0px;
   background-color: initial;
   border-color: initial;
@@ -49,13 +58,14 @@ h2 {
 }
 
 @keyframes navFadeWhite {
-  from {background-color: initial;}
-  to {background-color: white;}
+  from {background-color: initial; color: white;}
+  to {background-color: white; color: black;}
+
 }
 
 @keyframes navFadeTrans {
-  from {background-color: white;}
-  to {background-color: intial;}
+  from {background-color: white; color: black;}
+  to {background-color: intial; color: white;}
 }
 
 .navBarFade {
@@ -77,7 +87,40 @@ h2 {
 }
 
 
+/*BLack text transition*/
+
+@keyframes navBlack {
+  from {color: white;}
+  to {color: black;}
+}
+
+@keyframes navBlack-trans {
+  from {color: black;}
+  to {color: white;}
+}
+
+.navBlackText {
+  -webkit-animation: navBlack 0.6s;
+  -o-animation: navBlack 0.6s;
+  animation: navBlack 0.6s;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.navBlack-rev {
+  -webkit-animation: navBlack-trans 0.6s;
+  -o-animation: navBlack-trans 0.6s;
+  animation: navBlack-trans 0.6s;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+*/
+/*endblacktexttransition*/
+
 /* End Nav */
+/*end of weird deletion problem*/
 
 #link {
   font-family: 'source code pro';
