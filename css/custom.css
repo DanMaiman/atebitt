@@ -2,22 +2,15 @@
 body {
   padding-bottom: 20px;
   background-color: black;
+  font-family: "Abel";
 }
 
 h1 {
-  font-family: 'Josefin Sans';
-  font-size: 96px;
-  line-height: 1.2em;
+  font-family: 'Kaushan Script';
   text-transform: capitalize;
-  letter-spacing: .1em;
-  font-weight: 400;
-  font-style: normal;
-  color: yellow;
-  margin: 0 auto .25em;
 }
 
 h2 {
-  font-family: "Abel";
   font-size: 31px;
   line-height: 1.6em;
   text-transform: capitalize;
@@ -33,9 +26,10 @@ h2 {
 
 .navbar-inverse .navbar-brand {
   color: yellow;
-  font-family: 'source code pro';
   font-size: 30px;
+  font-family: "Kaushan Script";
 }
+
 
 .navbar-inverse .navbar-nav>li>a {
   color: white;
@@ -56,6 +50,8 @@ h2 {
   border-color: initial;
   font-size: 21px;
 }
+
+
 
 @keyframes navFadeWhite {
   from {background-color: initial; color: white;}
@@ -116,14 +112,27 @@ h2 {
   -o-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-*/
 /*endblacktexttransition*/
+
+.navbar-inverse .navbar-brand {
+  background-color: inherit;
+}
 
 /* End Nav */
 /*end of weird deletion problem*/
 
+h1.jumbo {
+  font-family: Josefin Sans;
+  font-size: 96px;
+  line-height: 1.2em;
+  letter-spacing: .1em;
+  font-weight: 400;
+  font-style: normal;
+  color: yellow;
+  margin: 0 auto .25em;
+}
+
 #link {
-  font-family: 'source code pro';
   text-decoration: none;
 }
 
@@ -141,6 +150,26 @@ h2 {
 }
 /*END fontawesome*/
 
+.fture {
+  height: 100vh;
+  text-align: center;
+  min-height: 500px;
+}
+
+.fture h1 {
+  padding-top: 50px;
+  margin: 0px 0px 20px 0px;
+  font-size: 60px;
+}
+
+i.fa.init {
+  color:rgba(0,0,0,0);
+}
+
+i.fa.fadeInUp {
+  display:block;
+}
+
 #one {
   background-color: #e6af4b;
 }
@@ -153,23 +182,10 @@ h2 {
   background-color: #f2cbbc;
 }
 
-.croatia {
-  padding-left: 0px;
-}
-
-.lead {
-  font-size: 50px;
-  font-family: 'Josefin Sans';
-  text-align: center;
-}
-
-.lead {
+.fa {
+  font-size: 300px;
+  margin-top: 50px;
   color: white;
-}
-
-.row {
-  margin-right: 0px;
-  margin-left: 0px;
 }
 
 .feat-head {
@@ -197,7 +213,6 @@ h2 {
   font-size: 21px;
   border: none;
   cursor: pointer;
-  font-family: 'source code pro';
   text-decoration: none;
 }
 
@@ -222,7 +237,6 @@ h2 {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  font-family: 'source code pro';
   font-size: 14px;
   color: yellow;
   background-color: transparent;
@@ -278,7 +292,7 @@ h2 {
 .video-container .filter {
   z-index: 100;
   position: absolute;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
   width: 100%;
 }
 .video-container video {

@@ -14,26 +14,66 @@ jQuery( document ).ready(function($) {
         scaleBannerVideoSize('.video-container video');
     });
 
-    var divOffset = $("div.programming").offset().top - 50;
+    var divOffset = $("div.btWeb").offset().top - 50;
+    var oneOffset = $("i.fa-globe").offset().top + 250;
+    var twoOffset = $("i.fa-wordpress").offset().top + 250;
+    var threeOffset = $("i.fa-hand-pointer-o").offset().top + 250;
 
     $(window).scroll(function()  {
         var scrollPos = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        var scrollBot = scrollPos + windowHeight;
 
 
         if (scrollPos >= divOffset) {
             $("nav").addClass("navBarFade");
             $("nav.navBarFade").removeClass("navBarFade-rev");
+            $(".hvr-overline-from-center").addClass("navBlackText");
+            $(".navBlackText").removeClass("navBlack-rev");
+            $(".navbar-brand").addClass("navBlackText");
         } else {
             $("nav.navBarFade").addClass("navBarFade-rev");
             $("nav").removeClass("navBarFade");
-        }
-        //black text code NEW
-        if (scrollPos >= divOffset) {
-            $(".hvr-overline-from-center").addClass("navBlackText");
-            $(".navBlackText").removeClass("navBlack-rev");
-        } else {
             $(".navBlackText").addClass("navBlack-rev");
             $(".hvr-overline-from-center").removeClass("navBlackText");
+            $(".navbar-brand").removeClass("navBlackText").removeClass("navBlack-rev");
+            
+        }
+        //black text code NEW
+        if (scrollBot >= oneOffset) {
+            $(".fa-globe").addClass("fadeInUp").removeClass("init");
+        } else {
+
+        }
+
+        if (scrollBot >= oneOffset - 250) {
+
+        } else {
+            $(".fa-globe").addClass("init").removeClass("fadeInUp");
+        }
+
+        if (scrollBot >= twoOffset) {
+            $(".fa-wordpress").addClass("fadeInUp").removeClass("init");
+        } else {
+
+        }
+
+        if (scrollBot >= twoOffset - 250) {
+
+        } else {
+            $(".fa-wordpress").addClass("init").removeClass("fadeInUp");
+        }
+
+        if (scrollBot >= threeOffset) {
+            $(".fa-hand-pointer-o").addClass("fadeInUp").removeClass("init");
+        } else {
+
+        }
+
+        if (scrollBot >= threeOffset - 250) {
+
+        } else {
+            $(".fa-hand-pointer-o").addClass("init").removeClass("fadeInUp");
         }
 
     });
