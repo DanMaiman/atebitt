@@ -21,6 +21,10 @@ h2 {
   margin: 0 auto;
 }
 
+p{
+  font-size: 3em;
+}
+
 /*was weirdly deleted?*/
 /* Nav */
 
@@ -157,9 +161,9 @@ h1.jumbo {
 }
 
 .fture h1 {
-  padding-top: 50px;
+  padding-top: 100px;
   margin: 0px 0px 20px 0px;
-  font-size: 60px;
+  font-size: 6em;
 }
 
 i.fa.init {
@@ -183,7 +187,7 @@ i.fa.fadeInUp {
 }
 
 .fa {
-  font-size: 300px;
+  font-size: 400px;
   margin-top: 50px;
   color: white;
 }

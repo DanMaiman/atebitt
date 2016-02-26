@@ -15,9 +15,9 @@ jQuery( document ).ready(function($) {
     });
 
     var divOffset = $("div.btWeb").offset().top - 50;
-    var oneOffset = $("i.fa-globe").offset().top + 250;
-    var twoOffset = $("i.fa-wordpress").offset().top + 250;
-    var threeOffset = $("i.fa-hand-pointer-o").offset().top + 250;
+    var oneOffset = $("i.fa-globe").offset().top + 350;
+    var twoOffset = $("i.fa-wordpress").offset().top + 350;
+    var threeOffset = $("i.fa-hand-pointer-o").offset().top + 350;
 
     $(window).scroll(function()  {
         var scrollPos = $(window).scrollTop();
@@ -46,7 +46,7 @@ jQuery( document ).ready(function($) {
 
         }
 
-        if (scrollBot >= oneOffset - 250) {
+        if (scrollBot >= oneOffset - 350) {
 
         } else {
             $(".fa-globe").addClass("init").removeClass("fadeInUp");
@@ -58,7 +58,7 @@ jQuery( document ).ready(function($) {
 
         }
 
-        if (scrollBot >= twoOffset - 250) {
+        if (scrollBot >= twoOffset - 350) {
 
         } else {
             $(".fa-wordpress").addClass("init").removeClass("fadeInUp");
@@ -70,7 +70,7 @@ jQuery( document ).ready(function($) {
 
         }
 
-        if (scrollBot >= threeOffset - 250) {
+        if (scrollBot >= threeOffset - 350) {
 
         } else {
             $(".fa-hand-pointer-o").addClass("init").removeClass("fadeInUp");
